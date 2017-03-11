@@ -15,6 +15,15 @@ $ git submodule add https://github.com/varuna-lang/llvm-binutils.git projects/ll
 
 ## License
 
-Vart is licensed under the same terms as the Varuna compiler. See the file LICENSE for details.
+llvm-binutils is licensed under the same terms as the Varuna compiler. See the file LICENSE for details.
 
 Copyright (C) 2016-2017 Elias Kosunen
+
+llvm-binutils mainly contains mirrored code from the LLVM compiler infrastructure project.
+See the whole license at http://releases.llvm.org/3.9.1/LICENSE.TXT
+
+University of Illinois/NCSA
+Open Source License
+
+Copyright (c) 2003-2016 University of Illinois at Urbana-Champaign.
+All rights reserved.

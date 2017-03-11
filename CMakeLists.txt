@@ -1,6 +1,3 @@
-file(GLOB sources_vart *.c)
-file(GLOB headers_vart *.h)
-
-add_library(vart ${sources_vart} ${headers_vart})
-add_dependencies(vart varuna)
-install(TARGETS vart DESTINATION lib)
+add_executable(varuna_llc llc.cpp)
+llvm_map_components_to_libnames(varuna_llc_libs support irreader passes objcarcopts native core codegen aarch64codegen aarch64asmparser amdgpucodegen amdgpuasmparser armcodegen armasmparser bpfcodegen hexagoncodegen hexagonasmparser mipscodegen mipsasmparser msp430codegen nvptxcodegen powerpccodegen powerpcasmparser sparccodegen sparcasmparser systemzcodegen systemzasmparser xcorecodegen)
+target_link_libraries(varuna_llc ${varuna_llvm_llc_libs})
