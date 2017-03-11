@@ -1,3 +1,28 @@
 add_executable(varuna_llc llc.cpp)
-llvm_map_components_to_libnames(varuna_llc_libs support irreader passes objcarcopts native core codegen aarch64codegen aarch64asmparser amdgpucodegen amdgpuasmparser armcodegen armasmparser bpfcodegen hexagoncodegen hexagonasmparser mipscodegen mipsasmparser msp430codegen nvptxcodegen powerpccodegen powerpcasmparser sparccodegen sparcasmparser systemzcodegen systemzasmparser xcorecodegen)
+llvm_map_components_to_libnames(varuna_llc_libs
+    AArch64
+    AMDGPU
+    ARM
+    BPF
+    Hexagon
+    Mips
+    MSP430
+    NVPTX
+    PowerPC
+    Sparc
+    SystemZ
+    X86
+    XCore
+    Analysis
+    AsmPrinter
+    CodeGen
+    Core
+    IRReader
+    MC
+    MIRParser
+    ScalarOpts
+    SelectionDAG
+    Support
+    Target
+    TransformUtils)
 target_link_libraries(varuna_llc ${varuna_llvm_llc_libs})
