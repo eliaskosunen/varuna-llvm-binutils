@@ -25,4 +25,4 @@ llvm_map_components_to_libnames(varuna_llc_libs
     Support
     Target
     TransformUtils)
-target_link_libraries(varuna_llc ${varuna_llvm_llc_libs})
+target_link_libraries(varuna_llc ${varuna_llc_libs})
