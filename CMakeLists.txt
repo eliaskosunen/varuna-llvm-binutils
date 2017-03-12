@@ -1,5 +1,4 @@
-add_executable(varuna_llc llc.cpp)
-llvm_map_components_to_libnames(varuna_llc_libs
+set(LLVM_TARGETS
     AArch64
     AMDGPU
     ARM
@@ -12,17 +11,10 @@ llvm_map_components_to_libnames(varuna_llc_libs
     Sparc
     SystemZ
     X86
-    XCore
-    Analysis
-    AsmPrinter
-    CodeGen
-    Core
-    IRReader
-    MC
-    MIRParser
-    ScalarOpts
-    SelectionDAG
-    Support
-    Target
-    TransformUtils)
-target_link_libraries(varuna_llc ${varuna_llc_libs})
+    XCore)
+
+add_subdirectory(llc)
+add_subdirectory(llvm-as)
+add_subdirectory(llvm-dis)
+add_subdirectory(llvm-lto)
+add_subdirectory(opt)
