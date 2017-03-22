@@ -3,7 +3,7 @@
 LLVM binary utilities for the Varuna compiler.
 These are provided with the compiler so clients don't have to install LLVM to compile Varuna programs.
 
-This repository contains the following LLVM binary utilities: llc, llvm-as, llvm-dis, llvm-lto and opt.
+This repository contains the following LLVM binary utilities: llc, llvm-as, llvm-dis and llvm-lto.
 
 ## Installing
 
