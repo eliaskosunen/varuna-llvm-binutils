@@ -7,7 +7,7 @@ function(add_varuna_llvm_tool tool_name)
         set(EXEC_SUFFIX)
     endif()
     add_custom_command(
-        OUTPUT ${TOOLS_OUTPUT_DIRECTORY}/varuna-${tool_name}
+        OUTPUT ${TOOLS_OUTPUT_DIRECTORY}/varuna-${tool_name}${EXEC_SUFFIX}
         COMMAND ${CMAKE_COMMAND} -E copy
         ${LLVM_TOOLS_BINARY_DIR}/${tool_name}${EXEC_SUFFIX}
         ${TOOLS_OUTPUT_DIRECTORY}/varuna-${tool_name}${EXEC_SUFFIX}
