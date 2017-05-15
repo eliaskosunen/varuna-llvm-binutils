@@ -18,6 +18,5 @@ endfunction()
 
 add_varuna_llvm_tool(llc)
 add_varuna_llvm_tool(llvm-as)
-add_varuna_llvm_tool(llvm-dis)
 add_varuna_llvm_tool(llvm-lto)
 add_varuna_llvm_tool(opt)
